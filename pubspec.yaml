@@ -1,0 +1,53 @@
+name: taskwise
+description: Aplicación móvil para gestión de tareas con funcionalidades avanzadas y componentes reutilizables.
+publish_to: 'none'
+
+version: 2.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Gestión de estado
+  provider: ^6.0.5
+  
+  # Base de datos
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  
+  # Utilidades
+  intl: ^0.18.1
+  
+  # Iconos
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Testing
+  mockito: ^5.4.2
+  build_runner: ^2.4.6
+  
+  # Linting
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Assets (opcional para futuras expansiones)
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+  
+  # Fuentes personalizadas (opcional)
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: assets/fonts/CustomFont-Regular.ttf
+  #       - asset: assets/fonts/CustomFont-Bold.ttf
+  #         weight: 700 

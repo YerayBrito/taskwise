@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color de fondo -->
+    <item android:drawable="@color/primary_color" />
+    
+    <!-- Logo centrado -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/ic_launcher" />
+    </item>
+    
+    <!-- Texto del nombre de la aplicación -->
+    <item android:bottom="100dp">
+        <bitmap
+            android:gravity="bottom|center_horizontal"
+            android:src="@drawable/app_name" />
+    </item>
+</layer-list> 

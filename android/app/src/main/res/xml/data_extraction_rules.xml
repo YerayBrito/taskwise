@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Incluir la base de datos de tareas -->
+        <include domain="database" path="taskwise.db" />
+        <!-- Incluir archivos de configuración -->
+        <include domain="sharedpref" path="." />
+        <!-- Excluir archivos temporales -->
+        <exclude domain="database" path="temp" />
+        <exclude domain="file" path="logs" />
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Incluir la base de datos de tareas -->
+        <include domain="database" path="taskwise.db" />
+        <!-- Incluir archivos de configuración -->
+        <include domain="sharedpref" path="." />
+        <!-- Excluir archivos temporales -->
+        <exclude domain="database" path="temp" />
+        <exclude domain="file" path="logs" />
+    </device-transfer>
+</data-extraction-rules> 

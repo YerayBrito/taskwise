@@ -121,7 +121,7 @@ class TaskProvider with ChangeNotifier {
       loadCategories(),
       loadTags(),
       loadStatistics(),
-    ]);
+    ] as Iterable<Future>);
   }
 
   void setFilterByCategory(String? category) {

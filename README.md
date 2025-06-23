@@ -1,5 +1,12 @@
 # TaskWise - Advanced Task Manager
 
+[![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/YerayBrito/taskwise)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Contributors](https://img.shields.io/github/contributors/YerayBrito/taskwise?style=flat-square)](https://github.com/YerayBrito/taskwise/graphs/contributors)
+[![Last Commit](https://img.shields.io/github/last-commit/YerayBrito/taskwise)](https://github.com/YerayBrito/taskwise/commits/develop)
+[![Open Issues](https://img.shields.io/github/issues/YerayBrito/taskwise?style=flat-square)](https://github.com/YerayBrito/taskwise/issues)
+
+
 TaskWise is a mobile application developed in Flutter that allows efficient task management with advanced features and a reusable component architecture.
 
 ## 🚀 Main Features

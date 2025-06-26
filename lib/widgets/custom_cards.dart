@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../models/task.dart';
+import 'custom_buttons.dart';
 
 class TaskCard extends StatelessWidget {
   final Task task;
@@ -121,25 +122,21 @@ class TaskCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     if (onEdit != null)
-                      IconButton(
-                        icon: const Icon(Icons.edit, size: 20),
+                      AppIconButton(
+                        icon: Icons.edit,
                         onPressed: onEdit,
                         tooltip: 'Editar',
-                        style: IconButton.styleFrom(
-                          backgroundColor: Colors.blue[50],
-                          foregroundColor: Colors.blue,
-                        ),
+                        backgroundColor: Colors.blue[50],
+                        foregroundColor: Colors.blue,
                       ),
                     if (onDelete != null) ...[
                       const SizedBox(width: 8),
-                      IconButton(
-                        icon: const Icon(Icons.delete, size: 20),
+                      AppIconButton(
+                        icon: Icons.delete,
                         onPressed: onDelete,
                         tooltip: 'Eliminar',
-                        style: IconButton.styleFrom(
-                          backgroundColor: Colors.red[50],
-                          foregroundColor: Colors.red,
-                        ),
+                        backgroundColor: Colors.red[50],
+                        foregroundColor: Colors.red,
                       ),
                     ],
                   ],

@@ -121,8 +121,8 @@ class _TaskEditScreenState extends State<TaskEditScreen> {
         title: Text(widget.task == null ? 'Nueva Tarea' : 'Editar Tarea'),
         centerTitle: true,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.save),
+          AppIconButton(
+            icon: Icons.save,
             onPressed: _saveForm,
             tooltip: 'Guardar',
           ),

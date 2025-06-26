@@ -15,8 +15,8 @@ class DashboardScreen extends StatelessWidget {
         title: const Text('Dashboard'),
         centerTitle: true,
         actions: [
-          IconButton(
-            icon: const Icon(Icons.refresh),
+          AppIconButton(
+            icon: Icons.refresh,
             onPressed: () {
               Provider.of<TaskProvider>(context, listen: false).loadStatistics();
             },

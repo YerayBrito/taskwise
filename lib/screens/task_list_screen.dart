@@ -58,7 +58,7 @@ class _TaskListScreenState extends State<TaskListScreen> {
         children: [
           Padding(
             padding: const EdgeInsets.all(16.0),
-            child: SearchBar(
+            child: AppSearchBar(
               hint: 'Buscar tareas...',
               controller: _searchController,
               onChanged: (query) {
@@ -103,9 +103,9 @@ class _TaskListScreenState extends State<TaskListScreen> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: AppFloatingButton(
+        icon: Icons.add,
         onPressed: () => _addNewTask(context),
-        child: const Icon(Icons.add),
       ),
     );
   }

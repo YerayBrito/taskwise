@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../models/task.dart';
+import 'custom_buttons.dart';
 
 class CustomTextField extends StatelessWidget {
   final String label;
@@ -13,6 +14,7 @@ class CustomTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final bool enabled;
   final VoidCallback? onTap;
+  final void Function(String?)? onSaved;
 
   const CustomTextField({
     super.key,
@@ -26,6 +28,7 @@ class CustomTextField extends StatelessWidget {
     this.suffixIcon,
     this.enabled = true,
     this.onTap,
+    this.onSaved,
   });
 
   @override
@@ -39,6 +42,7 @@ class CustomTextField extends StatelessWidget {
         keyboardType: keyboardType,
         enabled: enabled,
         onTap: onTap,
+        onSaved: onSaved,
         decoration: InputDecoration(
           labelText: label,
           hintText: hint,
@@ -348,13 +352,11 @@ class _TagsInputFieldState extends State<TagsInputField> {
                 ),
               ),
               const SizedBox(width: 8),
-              IconButton(
+              AppIconButton(
                 onPressed: () => _addTag(_controller.text),
-                icon: const Icon(Icons.add),
-                style: IconButton.styleFrom(
-                  backgroundColor: Theme.of(context).primaryColor,
-                  foregroundColor: Colors.white,
-                ),
+                icon: Icons.add,
+                backgroundColor: Theme.of(context).primaryColor,
+                foregroundColor: Colors.white,
               ),
             ],
           ),

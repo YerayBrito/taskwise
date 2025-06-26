@@ -137,7 +137,7 @@ class SecondaryButton extends StatelessWidget {
   }
 }
 
-class IconButton extends StatelessWidget {
+class AppIconButton extends StatelessWidget {
   final IconData icon;
   final VoidCallback? onPressed;
   final String? tooltip;
@@ -146,7 +146,7 @@ class IconButton extends StatelessWidget {
   final double size;
   final bool isCircular;
 
-  const IconButton({
+  const AppIconButton({
     super.key,
     required this.icon,
     this.onPressed,
@@ -259,7 +259,7 @@ class ActionButton extends StatelessWidget {
   }
 }
 
-class FloatingActionButton extends StatelessWidget {
+class AppFloatingButton extends StatelessWidget {
   final IconData icon;
   final VoidCallback? onPressed;
   final String? tooltip;
@@ -267,7 +267,7 @@ class FloatingActionButton extends StatelessWidget {
   final Color? foregroundColor;
   final double size;
 
-  const FloatingActionButton({
+  const AppFloatingButton({
     super.key,
     required this.icon,
     this.onPressed,

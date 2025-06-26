@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/task.dart';
+import 'custom_buttons.dart';
 
 class FilterChipGroup extends StatelessWidget {
   final String title;
@@ -59,13 +60,13 @@ class FilterChipGroup extends StatelessWidget {
   }
 }
 
-class SearchBar extends StatelessWidget {
+class AppSearchBar extends StatelessWidget {
   final String hint;
   final ValueChanged<String> onChanged;
   final VoidCallback? onClear;
   final TextEditingController? controller;
 
-  const SearchBar({
+  const AppSearchBar({
     super.key,
     required this.hint,
     required this.onChanged,
@@ -87,8 +88,8 @@ class SearchBar extends StatelessWidget {
           hintText: hint,
           prefixIcon: const Icon(Icons.search),
           suffixIcon: controller?.text.isNotEmpty == true
-              ? IconButton(
-                  icon: const Icon(Icons.clear),
+              ? AppIconButton(
+                  icon: Icons.clear,
                   onPressed: onClear,
                 )
               : null,
